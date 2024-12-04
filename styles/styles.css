@@ -3,9 +3,176 @@
 /* ===== NEXT WRITE GLOBAL STYLES, THEN USE MEDIA QUERIES FOR LAYOUT/STYLE ADJUSTMENTS ===== */
 /* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
 
-body {
-    background: magenta;
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
-p {
-    font-size: 2em;
+
+header {
+    background-color: #7FB103;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.2em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em; 
+    font-weight: bold;
+    margin: 0.5em 0; 
+    color: #FFD700; 
+    text-shadow: 1px 2px 4px #000000; 
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    border: 1px solid #FFFFFF; 
+    border-radius: 5px;
+    padding: 0px 8px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    margin: 65px 0 0;
+    background-color: #1664FF;
+    overflow: hidden;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+}
+
+#kayak-animation {
+    position: relative;
+    height: 490px;
+    background-color: #1664FF;
+    overflow: hidden;
+}
+
+#kayak {
+    width: 400px;
+    height: 120px;
+    background-color: #7FB103;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: left 2s;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveKayak 10s linear infinite;
+}
+
+@keyframes moveKayak {
+    0% { left: -400px; }
+    100% { left: 100%; }
+}
+
+#person {
+    width: 40px;
+    height: 80px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+@keyframes wave {
+       0% { transform: translateX(0); }
+       100% { transform: translateX(-50%); }
+   }
+
+   .wave {
+       position: absolute;
+       width: 200%;
+       height: 200px;
+       background-color: rgba(255, 255, 255, 0.5);
+       border-radius: 50%;
+       animation: wave 7s ease-in-out infinite alternate;
+       top: 50%;
+       left: 0;
+       transform: translateY(-50%);
+   }
+
+.wave:nth-child(2) {
+    top: -180px;
+    animation-delay: -5s;
+}
+
+.smiley-face {
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.smiley-face:hover {
+    transform: scale(1.2);
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-item {
+    background-color: #D9D9D9;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-item:hover {
+    transform: scale(1.05);
+    background-color: #1664FF;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #FF9C1B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
 }
