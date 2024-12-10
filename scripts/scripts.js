@@ -28,9 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Font highlight when clicking on a navigation item
 // https://stackoverflow.com/questions/75996551/select-and-add-function-to-all-links-in-a-nav @stack overflow
 // https://stackoverflow.com/questions/63255124/remove-class-from-parent-element-javascript @stack overflow
+// Font highlight when clicking on a navigation item
+const navLinks = document.querySelectorAll('nav ul li a');
+
 navLinks.forEach(link => {
     link.addEventListener('click', function() {
         navLinks.forEach(item => {

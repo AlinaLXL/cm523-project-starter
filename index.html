@@ -19,128 +19,128 @@
   </head>
   <body>
     <!-- YOUR HTML GOES HERE -->
-          <header>
-              <h1>Paddle Club</h1>
-              <nav>
-                  <ul>
-                      <li><a href="#home">Home</a></li>
-                      <li><a href="#event">Event</a></li>
-                      <li><a href="#map">Map</a></li>
-                      <li><a href="#about-us">About Us</a>
-                  </ul>
-              </nav>
-          </header>
-          <div class="container">
-              <section id="home" class="page">
-                <h2>home</h2>
-                  <div id="kayak-animation">
-                      <div id="kayak">
-    <!-- https://github.com/Splidejs/splide/discussions/1342 @luiskabes-arch -->
-                          <div id="person" aria-label="Person in a kayak"></div>
-                      </div>
-    <!-- https://github.com/nuxt/nuxt/discussions/30033 @ndragun92 -->
-                      <div class="wave" aria-hidden="true"></div>
-                      <div class="wave" aria-hidden="true"></div>   
-                  </div>
-              </section>
-    <!-- Links of the images from open sources: https://paddleboston.com/app/uploads/banner-contact-about.jpg; https://paddleboston.com/app/uploads/71221981-160515-115445-MysticRiverHerringRunandPaddleiPhone-768x432.jpg; https://paddleboston.com/app/uploads/guided-tours-moonlight-canoe-768x510.jpg; https://paddleboston.com/app/uploads/guided-tours-skyline-and-sunset-tours-768x512.jpg; https://www.supyoadventures.com/system/wp-content/uploads/2022/04/Boston-Harbor-Paddle-SUP-Yo-Adventures.jpg
+    <header>
+        <h1>Paddle Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#about-us">About Us</a>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="home" class="page">
+          <h2>home</h2>
+            <div id="kayak-animation">
+                <div id="kayak">
+<!-- https://github.com/Splidejs/splide/discussions/1342 @luiskabes-arch -->
+                    <div id="person" aria-label="Person in a kayak"></div>
+                </div>
+<!-- https://github.com/nuxt/nuxt/discussions/30033 @ndragun92 -->
+                <div class="wave" aria-hidden="true"></div>
+                <div class="wave" aria-hidden="true"></div>   
+            </div>
+        </section>
+<!-- Links of the images from open sources: https://paddleboston.com/app/uploads/banner-contact-about.jpg; https://paddleboston.com/app/uploads/71221981-160515-115445-MysticRiverHerringRunandPaddleiPhone-768x432.jpg; https://paddleboston.com/app/uploads/guided-tours-moonlight-canoe-768x510.jpg; https://paddleboston.com/app/uploads/guided-tours-skyline-and-sunset-tours-768x512.jpg; https://www.supyoadventures.com/system/wp-content/uploads/2022/04/Boston-Harbor-Paddle-SUP-Yo-Adventures.jpg
 -->            
 <section id="event" class="page">
-    <h2>Event</h2>
-    <div class="event-grid">
-        <div class="event-item">
-            <img src="images/Mystic Lakes Tour.jpg" class="event-image" />
-            <p class="event-title">Shuttled River Trips from the Mystic Lakes in Somerville</p>
-          <div class="event-details">
-                <p>Experience the serene beauty of Mystic Lakes in Somerville with our convenient shuttled river trips. Enjoy scenic views, diverse wildlife, and peaceful waters. Perfect for nature lovers and families. Our expert guides ensure a safe and informative journey through this urban oasis.</p>
-            </div>
-        </div>
-        <div class="event-item">
-            <img src="images/Skyline & City Lights Tour.jpg" class="event-image" />
-            <p class="event-title">Boston Skyline & City Lights Kayak Tours from Kendall Square</p>
-          <div class="event-details">
-                <p>Paddle through Boston's heart at twilight, launching from Kendall Square. Marvel at the city's illuminated skyline reflected on the Charles River. Our guided kayak tour offers a unique perspective of iconic landmarks, blending urban excitement with serene waters. Suitable for all skill levels.</p>
-            </div>
-        </div>
-        <div class="event-item">
-            <img src="images/Moonlight Tour.jpg" class="event-image" />
-          <p class="event-title">Moonlight Canoe Tour</p>
-          <div class="event-details">
-                <p>Embark on a magical evening adventure under the stars. Our Moonlight Canoe Tour offers a tranquil escape on calm waters. Glide silently through moonlit landscapes, guided by experienced instructors. Perfect for couples, friends, or solo explorers seeking a unique nighttime experience in nature.</p>
-            </div>
-        </div>
-        <div class="event-item">
-            <img src="images/Harbor Tour.jpg" class="event-image" />
-            <p class="event-title">Boston Harbor Tour</p>
-          <div class="event-details">
-                <p>Discover Boston's rich maritime history on our Harbor Tour. Cruise past iconic landmarks like the USS Constitution and Boston Light. Learn fascinating stories from expert guides while enjoying stunning skyline views. Perfect for history buffs, photographers, and visitors seeking an authentic Boston experience on the water.</p>
-            </div>
-        </div>
-    </div>
-    <section id="recommendation" style="text-align: center; margin-top: 40px;">
-        <h2>Find Your Perfect Activity</h2>
-        <div>
-            <p>Do you have any kayaking experience?</p>
-            <label>
-                <input type="radio" name="experience" value="yes" required> Yes
-            </label>
-            <label>
-                <input type="radio" name="experience" value="no"> No
-            </label>
-        </div>
-        <div>
-            <p>Do you prefer cityscapes or natural scenery?</p>
-            <label>
-                <input type="radio" name="preference" value="cityscapes" required> Cityscapes
-            </label>
-            <label>
-                <input type="radio" name="preference" value="natural"> Natural Scenery
-            </label>
-        </div>
-        <button id="recommend-btn">Get Recommendation</button>
-        <p id="recommendation-result" style="margin-top: 20px; font-weight: bold;"></p>
-    </section>
+<h2>Event</h2>
+<div class="event-grid">
+  <div class="event-item">
+      <img src="images/Mystic Lakes Tour.jpg" class="event-image" />
+      <p class="event-title">Shuttled River Trips from the Mystic Lakes in Somerville</p>
+    <div class="event-details">
+          <p>Experience the serene beauty of Mystic Lakes in Somerville with our convenient shuttled river trips. Enjoy scenic views, diverse wildlife, and peaceful waters. Perfect for nature lovers and families. Our expert guides ensure a safe and informative journey through this urban oasis.</p>
+      </div>
+  </div>
+  <div class="event-item">
+      <img src="images/Skyline & City Lights Tour.jpg" class="event-image" />
+      <p class="event-title">Boston Skyline & City Lights Kayak Tours from Kendall Square</p>
+    <div class="event-details">
+          <p>Paddle through Boston's heart at twilight, launching from Kendall Square. Marvel at the city's illuminated skyline reflected on the Charles River. Our guided kayak tour offers a unique perspective of iconic landmarks, blending urban excitement with serene waters. Suitable for all skill levels.</p>
+      </div>
+  </div>
+  <div class="event-item">
+      <img src="images/Moonlight Tour.jpg" class="event-image" />
+    <p class="event-title">Moonlight Canoe Tour</p>
+    <div class="event-details">
+          <p>Embark on a magical evening adventure under the stars. Our Moonlight Canoe Tour offers a tranquil escape on calm waters. Glide silently through moonlit landscapes, guided by experienced instructors. Perfect for couples, friends, or solo explorers seeking a unique nighttime experience in nature.</p>
+      </div>
+  </div>
+  <div class="event-item">
+      <img src="images/Harbor Tour.jpg" class="event-image" />
+      <p class="event-title">Boston Harbor Tour</p>
+    <div class="event-details">
+          <p>Discover Boston's rich maritime history on our Harbor Tour. Cruise past iconic landmarks like the USS Constitution and Boston Light. Learn fascinating stories from expert guides while enjoying stunning skyline views. Perfect for history buffs, photographers, and visitors seeking an authentic Boston experience on the water.</p>
+      </div>
+  </div>
+</div>
+<section id="recommendation" style="text-align: center; margin-top: 40px;">
+  <h2>Find Your Perfect Activity</h2>
+  <div>
+      <p>Do you have any kayaking experience?</p>
+      <label>
+          <input type="radio" name="experience" value="yes" required> Yes
+      </label>
+      <label>
+          <input type="radio" name="experience" value="no"> No
+      </label>
+  </div>
+  <div>
+      <p>Do you prefer cityscapes or natural scenery?</p>
+      <label>
+          <input type="radio" name="preference" value="cityscapes" required> Cityscapes
+      </label>
+      <label>
+          <input type="radio" name="preference" value="natural"> Natural Scenery
+      </label>
+  </div>
+  <button id="recommend-btn">Get Recommendation</button>
+  <p id="recommendation-result" style="margin-top: 20px; font-weight: bold;"></p>
 </section>
-              <section id="map" class="page">
-                  <h2>Map</h2>     
+</section>
+        <section id="map" class="page">
+            <h2>Map</h2>     
 <section id="map" class="page">
-    <div class="map-container">
-        <div class="info-box">
-            <h3>Seven Rental Locations</h3>
-            <p>All locations are on the water and offer canoes, kayaks, and paddleboards. Explore all our rental locations and you'll find a wide range of paddling experiences and environments!</p>
-        </div>
-    </div>
-  <div id="map" style="height: 100vh;"></div>
-  <!-- https://leafletjs.com/ @Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<div class="map-container">
+  <div class="info-box">
+      <h3>Seven Rental Locations</h3>
+      <p>All locations are on the water and offer canoes, kayaks, and paddleboards. Explore all our rental locations and you'll find a wide range of paddling experiences and environments!</p>
+  </div>
+</div>
+<div id="map" style="height: 100vh;"></div>
+<!-- https://leafletjs.com/ @Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </section>       
-              </section>
-              <section id="about-us" class="page">
-    <h2>About Us</h2>
-    <div class="about-content">
- <!-- https://github.com/vercel/next.js/discussions/73335 @Kennty3 --> 
-        <img src="images/About Us.jpg" style="width:100%;">
-      <h3 class="highlight-title">Welcome to the Paddle Club!</h3>
+        </section>
+        <section id="about-us" class="page">
+<h2>About Us</h2>
+<div class="about-content">
+<!-- https://github.com/vercel/next.js/discussions/73335 @Kennty3 --> 
+  <img src="images/About Us.jpg" style="width:100%;">
+<h3 class="highlight-title">Welcome to the Paddle Club!</h3>
 <p>At Paddle Club, we believe in the power of community and the joy of outdoor adventure. Our organization is dedicated to bringing people together through the love of paddling. Whether you’re a seasoned paddler or a complete beginner, our aim is to create a welcoming environment where everyone can connect, learn, and grow.</p>
 
-     <h3 class="highlight-title">Our Mission</h3>
+<h3 class="highlight-title">Our Mission</h3>
 Our mission is to foster a sense of belonging and camaraderie among members of our community. We organize regular paddling events, workshops, and social gatherings that promote friendship, teamwork, and a shared passion for water sports. Our club is not just about paddling; it's about building lasting relationships and creating memorable experiences.
 
-      <h3 class="highlight-title">Join Us</h3>
+<h3 class="highlight-title">Join Us</h3>
 <p>We invite you to join us on our adventures! Explore beautiful waterways, participate in exciting events, and meet fellow paddling enthusiasts. Whether you’re looking to improve your skills, make new friends, or simply enjoy the beauty of nature, Paddle Club has something for everyone.</p>
 
 <p>Together, let's paddle towards new horizons and strengthen our community bonds!</p>
-    </div>
+</div>
 </section>
 <footer>
-    <nav>
-        <ul>
+<nav>
+  <ul>
 <!-- https://github.com/Stirling-Tools/Stirling-PDF/discussions/2098 @mattyx0011 -->
-            <li><a href="https://www.figma.com/design/PS3vqGgB9ZT4PZWlzxFCYM/Wireframe%26Prototype_Alina?node-id=0-1&node-type=canvas&t=yzj1nJs4Rq16VrTP-0" target="_blank">Wireframe & Prototype</a></li>
-            <li><a href="https://www.figma.com/design/8S9snkHnh2q4CrJQwkRcSU/Design-Documentation_Alina?node-id=0-1&node-type=canvas&t=Od6W68BIJLpgVPZR-0" target="_blank">Design Document</a></li>
-            <li><a href="https://docs.google.com/document/d/1TgmID8kpL3yQMGCXKFedxuKUP_EQCmm3-HRwacskPzo/edit?usp=sharing" target="_blank">Project Proposal</a></li>
-            <li><a href="https://docs.google.com/document/d/1XJSP-YwesgFMrenDfgx4tIDYRFG4yZM6DIIer_7loe4/edit?usp=sharing" target="_blank">User Report</a></li>
-        </ul>
-    </nav>
+      <li><a href="https://www.figma.com/design/PS3vqGgB9ZT4PZWlzxFCYM/Wireframe%26Prototype_Alina?node-id=0-1&node-type=canvas&t=yzj1nJs4Rq16VrTP-0" target="_blank">Wireframe & Prototype</a></li>
+      <li><a href="https://www.figma.com/design/8S9snkHnh2q4CrJQwkRcSU/Design-Documentation_Alina?node-id=0-1&node-type=canvas&t=Od6W68BIJLpgVPZR-0" target="_blank">Design Document</a></li>
+      <li><a href="https://docs.google.com/document/d/1TgmID8kpL3yQMGCXKFedxuKUP_EQCmm3-HRwacskPzo/edit?usp=sharing" target="_blank">Project Proposal</a></li>
+      <li><a href="https://docs.google.com/document/d/1XJSP-YwesgFMrenDfgx4tIDYRFG4yZM6DIIer_7loe4/edit?usp=sharing" target="_blank">User Report</a></li>
+  </ul>
+</nav>
 </footer>
