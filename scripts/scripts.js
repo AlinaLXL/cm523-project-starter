@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // https://stackoverflow.com/questions/35347014/show-div-if-it-is-display-style-none-hide-if-display-style-is-block @stack overflow
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             pages.forEach(page => {
                 if (page.id === targetId) {

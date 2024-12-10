@@ -109,7 +109,7 @@ nav ul li.current a {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: moveKayak 8s linear infinite;
+    animation: moveKayak 10s linear infinite;
 }
 
 @keyframes moveKayak {
@@ -209,7 +209,6 @@ nav ul li.current a {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
-    width: 100%;
 }
 
 .event-image {
