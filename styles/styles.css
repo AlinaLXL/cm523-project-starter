@@ -45,12 +45,28 @@ nav ul li {
     margin: 0 20px;
     border: 1px solid #FFFFFF; 
     border-radius: 5px;
-    padding: 0px 8px;
+    padding: 5px 8px;
 }
 
 nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+nav ul li:hover {
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+nav ul li.current {
+    font-weight: bold;
+}
+
+nav ul li.current a {
+    color: #FFD700;
 }
 
 .container {
@@ -76,7 +92,7 @@ nav ul li a {
 
 #kayak-animation {
     position: relative;
-    height: 500px;
+    height: 1000px;
     background-color: #1664FF;
     overflow: hidden;
 }
@@ -256,34 +272,6 @@ nav ul li a {
     color: #FFD700;
     font-size: 1.2em; 
     font-weight: bold;
-}
-
-.about-content h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.text-input {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#about-us a {
-    display: inline-block;
-    background-color: #7FB103;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    width: 25%;
-    margin: 30px 0;
-   
 }
 
 footer {

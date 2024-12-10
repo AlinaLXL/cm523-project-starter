@@ -26,40 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+});
 
-    // Subscribe button on the About Us page
-    // https://github.com/Cyfrin/foundry-full-course-cu/discussions/2980 @Sanu2002
-    const subscribeLink = document.getElementById('subscribe-link');
-    
-    // https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault @MDN Web Docs
-    // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener @MDN Web Docs
-    if (subscribeLink) {
-        subscribeLink.addEventListener('click', function(event) {
-            event.preventDefault();
-    // https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement @MDN Web Docs
-    // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style @MDN Web Docs
-    // https://zh.javascript.info/styles-and-classes @javascript info
-            const messageDiv = document.createElement('div');
-            messageDiv.textContent = 'Thanks for Your Subscribing!';
-            messageDiv.style.position = "fixed";
-            messageDiv.style.top = "50%";
-            messageDiv.style.left = "50%";
-            messageDiv.style.transform = "translate(-50%, -50%)";
-            messageDiv.style.backgroundColor = "#7FB103";
-            messageDiv.style.color = "white";
-            messageDiv.style.padding = "20px";
-            messageDiv.style.borderRadius = "5px";
-            messageDiv.style.fontSize = "18px";
-            messageDiv.style.zIndex = "1000";
-                
-    // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
-            document.body.appendChild(messageDiv);
-            
-            setTimeout(() => {
-                document.body.removeChild(messageDiv);
-            }, 3000);
+// Font highlight when clicking on a navigation item
+// https://stackoverflow.com/questions/75996551/select-and-add-function-to-all-links-in-a-nav @stack overflow
+// https://stackoverflow.com/questions/63255124/remove-class-from-parent-element-javascript @stack overflow
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.forEach(item => {
+            item.parentElement.classList.remove('current');
         });
-    }
+        this.parentElement.classList.add('current');
+    });
 });
 
 // https://leafletjs.com/ @Leaflet
